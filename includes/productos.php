@@ -1,6 +1,5 @@
 <?PHP
 $productos = [
-  'bob_marley' => [
     [
       "id" => "1",
       "titulo" => "Rastaman Vibration",
@@ -98,11 +97,9 @@ $productos = [
       "bajada" => "Uprising es el duodécimo álbum de estudio de Bob Marley & The Wailers. Se publicó en 1980 y fue el último de Bob Marley en vida, ya que al año siguiente el mítico cantante moriría.",
       "portada" => "marley_uprising.jpg",
       "precio" => 70000
-    ]
-  ],
-  'pink_floyd' => [
+    ],
     [
-      "id" => "1",
+      "id" => "9",
       "titulo" => "The Wall",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -114,7 +111,7 @@ $productos = [
       "precio" => 80000
     ],
     [
-      "id" => "2",
+      "id" => "10",
       "titulo" => "The Dark Side of the Moon",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -126,7 +123,7 @@ $productos = [
       "precio" => 60000
     ],
     [
-      "id" => "3",
+      "id" => "11",
       "titulo" => "Wish You Were Here",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -138,7 +135,7 @@ $productos = [
       "precio" => 70000
     ],
     [
-      "id" => "4",
+      "id" => "12",
       "titulo" => "The Division Bell",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -150,7 +147,7 @@ $productos = [
       "precio" => 75000
     ],
     [
-      "id" => "5",
+      "id" => "13",
       "titulo" => "Pulse",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -162,7 +159,7 @@ $productos = [
       "precio" => 80000
     ],
     [
-      "id" => "6",
+      "id" => "14",
       "titulo" => "Meddle",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -174,7 +171,7 @@ $productos = [
       "precio" => 62000
     ],
     [
-      "id" => "7",
+      "id" => "15",
       "titulo" => "The Final Cut",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -186,7 +183,7 @@ $productos = [
       "precio" => 55000
     ],
     [
-      "id" => "8",
+      "id" => "16",
       "titulo" => "Atom Heart Mother",
       "genero" => "Rock",
       "artista" => "Pink Floyd",
@@ -196,11 +193,9 @@ $productos = [
       "bajada" => "Atom Heart Mother - en español Madre De Corazón Atómico - es el quinto álbum de estudio del grupo británico Pink Floyd. Fue lanzado el 2 de octubre de 1970. Es un trabajo de transición, ya que el grupo empieza a alejarse del rock psicodélico para entrar en el sinfónico y progresivo.",
       "portada" => "floyd_atom.jpeg",
       "precio" => 50000
-    ]
-  ],
-  'the_beatles' => [
+    ],
     [
-      "id" => "1",
+      "id" => "17",
       "titulo" => "The Beatles",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -212,7 +207,7 @@ $productos = [
       "precio" => 90000
     ],
     [
-      "id" => "2",
+      "id" => "18",
       "titulo" => "Abbey Road",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -224,7 +219,7 @@ $productos = [
       "precio" => 80000
     ],
     [
-      "id" => "3",
+      "id" => "19",
       "titulo" => "Revolver",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -236,7 +231,7 @@ $productos = [
       "precio" => 70000
     ],
     [
-      "id" => "4",
+      "id" => "20",
       "titulo" => "Help!",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -249,7 +244,7 @@ $productos = [
       "precio" => 90000
     ],
     [
-      "id" => "5",
+      "id" => "21",
       "titulo" => "Please Please Me",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -261,7 +256,7 @@ $productos = [
       "precio" => 60000
     ],
     [
-      "id" => "6",
+      "id" => "22",
       "titulo" => "A Hard Day's Night",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -273,7 +268,7 @@ $productos = [
       "precio" => 62000
     ],
     [
-      "id" => "7",
+      "id" => "23",
       "titulo" => "Rubber Soul",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -285,7 +280,7 @@ $productos = [
       "precio" => 70000
     ],
     [
-      "id" => "8",
+      "id" => "24",
       "titulo" => "Let It Be",
       "genero" => "Rock/Pop",
       "artista" => "The Beatles",
@@ -295,11 +290,9 @@ $productos = [
       "bajada" => "Let It Be es el duodécimo y último álbum de estudio de la banda de rock inglesa The Beatles. Fue lanzado el 8 de mayo de 1970, días después de que se hiciera oficial la salida de Paul McCartney de la banda, y con ella la disolución pública del grupo.​",
       "portada" => "beatles_let_it_be.webp",
       "precio" => 75000
-    ]
-  ],
-  'rolling_stones' => [
+    ],
     [
-      "id" => "1",
+      "id" => "25",
       "titulo" => "Sticky Fingers",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -311,7 +304,7 @@ $productos = [
       "precio" => 90000
     ],
     [
-      "id" => "2",
+      "id" => "26",
       "titulo" => "The Rolling Stones",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -323,7 +316,7 @@ $productos = [
       "precio" => 80000
     ],
     [
-      "id" => "3",
+      "id" => "27",
       "titulo" => "Exile on Main St.",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -335,7 +328,7 @@ $productos = [
       "precio" => 70000
     ],
     [
-      "id" => "4",
+      "id" => "28",
       "titulo" => "Let It Bleed",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -348,7 +341,7 @@ $productos = [
       "precio" => 90000
     ],
     [
-      "id" => "5",
+      "id" => "29",
       "titulo" => "Aftermath",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -360,7 +353,7 @@ $productos = [
       "precio" => 60000
     ],
     [
-      "id" => "6",
+      "id" => "30",
       "titulo" => "Tattoo You",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -372,7 +365,7 @@ $productos = [
       "precio" => 62000
     ],
     [
-      "id" => "7",
+      "id" => "31",
       "titulo" => "Black and Blue",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -384,7 +377,7 @@ $productos = [
       "precio" => 70000
     ],
     [
-      "id" => "8",
+      "id" => "32",
       "titulo" => "Beggars Banquet",
       "genero" => "Rock",
       "artista" => "The Rolling Stones",
@@ -396,6 +389,5 @@ $productos = [
       "portada" => "stones_beggars_banquet.jpeg",
       "precio" => 75000
     ]
-  ]
 ];
 ?>
