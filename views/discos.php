@@ -27,7 +27,7 @@ $tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
         </h3>
 
         <?PHP foreach ($artista as $album) { ?>
-          <div class="col-sm-6 col-md-4 col-xl-3">
+          <div class="prod col-sm-6 col-md-4 col-xl-3">
             <div class="card h-100 mb-3">
               <div class="img shadow-lg card-img-top"
                 style="background: url('assets/img/<?= $album['portada'] ?>') no-repeat center">
