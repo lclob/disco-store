@@ -13,7 +13,7 @@ function catalogo_completo(): array
 }
 
 /**
- * Devuelve el catalogo de productos de un personaje en particular
+ * Devuelve el catalogo de productos de un artista en particular
  * @param string $nombre Un string con el nombre del artista a buscar
  * 
  * @return array Un array con todos los vinilos de ese artista en stock.
@@ -51,4 +51,23 @@ function producto_x_id(int $idProducto): mixed
   }
 
   return null;
+}
+
+/**
+ * Devuelve los datos del producto banner, el cual se utiliza para mostrar a cada artista en la seccion artistas
+ * 
+ * @return array Un array asociativo que contiene los arrays con datos de cada artista
+ */
+function artista(): array
+{
+  $catalogo = catalogo_completo();
+  $arrayArtistas = [];
+
+  foreach ($catalogo as $artista) {
+    if ($artista['banner']){
+      array_push($arrayArtistas, $artista);
+    }
+  }
+
+  return $arrayArtistas;
 }

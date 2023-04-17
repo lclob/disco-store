@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "banner": true,
     "nombre": "bob_marley",
     "titulo": "Rastaman Vibration",
     "genero": "Reggae",
@@ -105,6 +106,7 @@
   },
   {
     "id": "9",
+    "banner": true,
     "nombre": "pink_floyd",
     "titulo": "The Wall",
     "genero": "Rock",
@@ -209,6 +211,7 @@
   },
   {
     "id": "17",
+    "banner": true,
     "nombre": "the_beatles",
     "titulo": "The Beatles",
     "genero": "Rock\/Pop",
@@ -313,6 +316,7 @@
   },
   {
     "id": "25",
+    "banner": true,
     "nombre": "rolling_stones",
     "titulo": "Sticky Fingers",
     "genero": "Rock",

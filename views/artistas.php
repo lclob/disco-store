@@ -1,5 +1,6 @@
 <?PHP
-require_once "data/artistas.php";
+require_once "libraries/productos.php";
+$artista = artista();
 ?>
 
 <div id="artistas">
@@ -11,7 +12,7 @@ require_once "data/artistas.php";
 
     <div class="container">
       <div class="row g-4">
-        <?PHP foreach ($artistas as $key) { ?>
+        <?PHP foreach ($artista as $key) { ?>
             <div class="col-sm-6 col-md-4 col-xl-3">
               <div class="card text-bg-dark">
                 <a href="index.php?sec=discos&nombre=<?= $key['nombre'] ?>">
