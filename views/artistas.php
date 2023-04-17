@@ -1,8 +1,5 @@
 <?PHP
-require_once "libraries/productos.php";
-
-$artista = artista();
-
+require_once "data/artistas.php";
 ?>
 
 <div id="artistas">
@@ -14,15 +11,14 @@ $artista = artista();
 
     <div class="container">
       <div class="row g-4">
-        <?PHP foreach ($artista as $key => $value) { 
-          $portada = array_shift($value); ?>
+        <?PHP foreach ($artistas as $key) { ?>
             <div class="col-sm-6 col-md-4 col-xl-3">
               <div class="card text-bg-dark">
-                <a href="index.php?sec=discos&nombre=<?= $key ?>">
-                <img src="assets/img/<?= $portada['portada'] ?>" class="card-img" alt="portada - <?= $portada['titulo'] ?>"/>
+                <a href="index.php?sec=discos&nombre=<?= $key['nombre'] ?>">
+                <img src="assets/img/<?= $key['portada'] ?>" class="card-img" alt="portada - <?= $key['titulo'] ?>"/>
                 <div class="card-img-overlay">
                   <h5 class="card-title">
-                    <?= $tituloArtistas = ucwords(str_replace("_", " ", $key)); ?>
+                    <?= $tituloArtistas = ucwords(str_replace("_", " ", $key['nombre'])); ?>
                   </h5>
                 </div>
               </a>

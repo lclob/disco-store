@@ -52,17 +52,3 @@ function producto_x_id(int $idProducto): mixed
 
   return null;
 }
-
-function artista()
-{
-  $catalogo = catalogo_completo();
-  $array = [];
-  foreach ($catalogo as $key) {
-    array_push($array, $key["nombre"]);
-  }
-  $nombre = array_unique($array);
-  echo "<pre>";
-  echo print_r($nombre);
-  echo "</pre>";
-  return $nombre;
-}
