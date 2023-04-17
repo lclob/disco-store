@@ -1,10 +1,5 @@
 <?PHP
-/*
-$misParametros = $_GET;
-echo "<pre>";
-print_r($artista);
-echo "</pre>";
-*/
+require_once "libraries/productos.php";
 
 $secciones_validas = [
   "home" => [
@@ -81,10 +76,10 @@ if (!array_key_exists($seccion, $secciones_validas)) {
             Discos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php?sec=discos&artista=bob_marley">Bob Marley</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&artista=pink_floyd">Pink Floyd</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&artista=the_beatles">The Beatles</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&artista=rolling_stones">Rolling Stones</a></li>
+            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=bob_marley">Bob Marley</a></li>
+            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=pink_floyd">Pink Floyd</a></li>
+            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=the_beatles">The Beatles</a></li>
+            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=rolling_stones">Rolling Stones</a></li>
           </ul>
         </li>
         <li class="nav-item">

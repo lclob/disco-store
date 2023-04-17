@@ -1,5 +1,8 @@
 <?PHP
-require "includes/productos.php";
+require_once "libraries/productos.php";
+
+$artista = artista();
+
 ?>
 
 <div id="artistas">
@@ -11,11 +14,11 @@ require "includes/productos.php";
 
     <div class="container">
       <div class="row g-4">
-        <?PHP foreach ($productos as $key => $value) { 
+        <?PHP foreach ($artista as $key => $value) { 
           $portada = array_shift($value); ?>
             <div class="col-sm-6 col-md-4 col-xl-3">
               <div class="card text-bg-dark">
-                <a href="index.php?sec=discos&artista=<?= $key ?>">
+                <a href="index.php?sec=discos&nombre=<?= $key ?>">
                 <img src="assets/img/<?= $portada['portada'] ?>" class="card-img" alt="portada - <?= $portada['titulo'] ?>"/>
                 <div class="card-img-overlay">
                   <h5 class="card-title">

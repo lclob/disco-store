@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "nombre": "bob_marley",
     "titulo": "Rastaman Vibration",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -13,6 +14,7 @@
   },
   {
     "id": "2",
+    "nombre": "bob_marley",
     "titulo": "Soul Rebels",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -25,6 +27,7 @@
   },
   {
     "id": "3",
+    "nombre": "bob_marley",
     "titulo": "Kaya",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -37,6 +40,7 @@
   },
   {
     "id": "4",
+    "nombre": "bob_marley",
     "titulo": "Exodous",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -49,6 +53,7 @@
   },
   {
     "id": "5",
+    "nombre": "bob_marley",
     "titulo": "Natty Dread",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -61,6 +66,7 @@
   },
   {
     "id": "6",
+    "nombre": "bob_marley",
     "titulo": "Survival",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -73,6 +79,7 @@
   },
   {
     "id": "7",
+    "nombre": "bob_marley",
     "titulo": "Burnin'",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -85,6 +92,7 @@
   },
   {
     "id": "8",
+    "nombre": "bob_marley",
     "titulo": "Uprising",
     "genero": "Reggae",
     "artista": "Bob Marley & The Wailers",
@@ -97,6 +105,7 @@
   },
   {
     "id": "9",
+    "nombre": "pink_floyd",
     "titulo": "The Wall",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -109,6 +118,7 @@
   },
   {
     "id": "10",
+    "nombre": "pink_floyd",
     "titulo": "The Dark Side of the Moon",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -121,6 +131,7 @@
   },
   {
     "id": "11",
+    "nombre": "pink_floyd",
     "titulo": "Wish You Were Here",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -133,6 +144,7 @@
   },
   {
     "id": "12",
+    "nombre": "pink_floyd",
     "titulo": "The Division Bell",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -145,6 +157,7 @@
   },
   {
     "id": "13",
+    "nombre": "pink_floyd",
     "titulo": "Pulse",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -157,6 +170,7 @@
   },
   {
     "id": "14",
+    "nombre": "pink_floyd",
     "titulo": "Meddle",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -169,6 +183,7 @@
   },
   {
     "id": "15",
+    "nombre": "pink_floyd",
     "titulo": "The Final Cut",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -181,6 +196,7 @@
   },
   {
     "id": "16",
+    "nombre": "pink_floyd",
     "titulo": "Atom Heart Mother",
     "genero": "Rock",
     "artista": "Pink Floyd",
@@ -193,6 +209,7 @@
   },
   {
     "id": "17",
+    "nombre": "the_beatles",
     "titulo": "The Beatles",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -205,6 +222,7 @@
   },
   {
     "id": "18",
+    "nombre": "the_beatles",
     "titulo": "Abbey Road",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -217,6 +235,7 @@
   },
   {
     "id": "19",
+    "nombre": "the_beatles",
     "titulo": "Revolver",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -229,6 +248,7 @@
   },
   {
     "id": "20",
+    "nombre": "the_beatles",
     "titulo": "Help!",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -241,6 +261,7 @@
   },
   {
     "id": "21",
+    "nombre": "the_beatles",
     "titulo": "Please Please Me",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -253,6 +274,7 @@
   },
   {
     "id": "22",
+    "nombre": "the_beatles",
     "titulo": "A Hard Day's Night",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -265,6 +287,7 @@
   },
   {
     "id": "23",
+    "nombre": "the_beatles",
     "titulo": "Rubber Soul",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -277,6 +300,7 @@
   },
   {
     "id": "24",
+    "nombre": "the_beatles",
     "titulo": "Let It Be",
     "genero": "Rock\/Pop",
     "artista": "The Beatles",
@@ -289,6 +313,7 @@
   },
   {
     "id": "25",
+    "nombre": "rolling_stones",
     "titulo": "Sticky Fingers",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -301,6 +326,7 @@
   },
   {
     "id": "26",
+    "nombre": "rolling_stones",
     "titulo": "The Rolling Stones",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -313,6 +339,7 @@
   },
   {
     "id": "27",
+    "nombre": "rolling_stones",
     "titulo": "Exile on Main St.",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -325,6 +352,7 @@
   },
   {
     "id": "28",
+    "nombre": "rolling_stones",
     "titulo": "Let It Bleed",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -337,6 +365,7 @@
   },
   {
     "id": "29",
+    "nombre": "rolling_stones",
     "titulo": "Aftermath",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -349,6 +378,7 @@
   },
   {
     "id": "30",
+    "nombre": "rolling_stones",
     "titulo": "Tattoo You",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -361,6 +391,7 @@
   },
   {
     "id": "31",
+    "nombre": "rolling_stones",
     "titulo": "Black and Blue",
     "genero": "Rock",
     "artista": "The Rolling Stones",
@@ -373,6 +404,7 @@
   },
   {
     "id": "32",
+    "nombre": "rolling_stones",
     "titulo": "Beggars Banquet",
     "genero": "Rock",
     "artista": "The Rolling Stones",
