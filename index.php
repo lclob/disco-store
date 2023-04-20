@@ -16,6 +16,9 @@ $secciones_validas = [
   ],
   "artistas" => [
     "titulo" => "Nuestros artistas"
+  ],
+  "producto" => [
+      "titulo" => "Detalle de producto"
   ]
 ];
 

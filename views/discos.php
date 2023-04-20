@@ -76,7 +76,7 @@ if (empty($catalogo)) {
                   <div class="fs-3 mb-3 fw-bold text-center precio">$
                     <?= number_format($album['precio'], 2, ",", ".") ?>
                   </div>
-                  <a href="#" class="btn bg-comprar w-100 fw-bold">COMPRAR</a>
+                  <a href="index.php?sec=producto&id=<?= $album['id'] ?>" class="btn bg-btn w-100 fw-bold">VER MÁS</a>
                 </div>
               </div>
             </div>

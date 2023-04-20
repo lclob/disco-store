@@ -183,7 +183,7 @@ main{
   transition: all .2s ease-in-out;
 }
 
-.card-text {
+#discos .card-text {
   height: 100px;
   overflow: scroll;
   margin-bottom: .5rem;
@@ -247,7 +247,7 @@ main{
   transform: scale(1.1);
 }
 
-.bg-comprar {
+.bg-btn {
   background-color: turquoise;
 }
 
@@ -331,6 +331,54 @@ main{
 #artistas .card-title {
   filter: drop-shadow(2px 4px 5px black);
   padding: .5rem;
+}
+
+/* producto */
+#producto figure{
+  margin: 0;
+  border-radius: 10px;
+}
+
+#producto img{
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 550px;
+  border-radius: 10px;
+}
+
+#producto li{
+  color: white;
+  background: transparent !important;
+}
+
+#producto ul{
+  background: transparent !important;
+}
+
+.descripcion-producto > *{
+  margin: 1rem;
+}
+
+#producto>div:first-of-type {
+  padding: 2rem 2rem 0;
+}
+
+#producto .bg-btn{
+  margin: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+@media screen and (max-width: 992px){
+  #producto .row{
+    display: block;
+  }
+  #producto img{
+    max-height: none;
+  }
+  .descripcion-producto > *{
+    margin-left: 0;
+  }
 }
 
 /* historia */
