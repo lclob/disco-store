@@ -1,5 +1,6 @@
 <?PHP
 require_once "libraries/productos.php";
+require_once "libraries/funciones.php";
 
 $artistaSeleccionado = $_GET['nombre'] ?? FALSE;
 
@@ -56,7 +57,7 @@ if (empty($catalogo)) {
                 </div>
                 <div class="modal-body bg-dark">
                   <p class="card-text">
-                    <?= $album['bajada'] ?>
+                    <?= recortar_palabras($album['bajada'], 20) ?>
                   </p>
                   <ul class="list-group list-group-flush bg-dark">
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Genero:</span>

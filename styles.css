@@ -184,8 +184,6 @@ main{
 }
 
 #discos .card-text {
-  height: 100px;
-  overflow: scroll;
   margin-bottom: .5rem;
 }
 
