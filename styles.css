@@ -10,6 +10,12 @@
   src: url(assets/fonts/AbstractGroovy-MV3ZJ.otf);
 }
 
+@media screen and (max-width:580px) {
+  #home > div:first-of-type, #discos > div:first-of-type, #artistas > div:first-of-type, #producto > div:first-of-type {
+    padding: 2rem .5rem !important;
+  }
+}
+
 #home h1{
   font-size: 5rem;
   font-family: 'Hippie';
