@@ -8,6 +8,7 @@ function catalogo_completo(): array
 {
   $catalogoJSON = file_get_contents('data/productos.json');
   $resultado = json_decode($catalogoJSON, TRUE);
+  shuffle($resultado);
 
   return $resultado;
 }

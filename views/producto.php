@@ -13,7 +13,7 @@ $vinilo = producto_x_id($id);
 
   <div class="container">
     <div class="row align-items-center justify-content-center">
-
+      
       <?PHP if (!empty($vinilo)) { ?>
         <div class="col">
           <figure>
@@ -27,6 +27,9 @@ $vinilo = producto_x_id($id);
           <h2>
             <?= $vinilo['titulo'] ?>
           </h2>
+          <div class="fs-3 mb-3 fw-bold text-start precio">$
+            <span><?= number_format($vinilo['precio'], 2, ",", ".") ?></span>
+          </div>
           <p>
             <?= $vinilo['bajada'] ?>
           </p>
@@ -45,9 +48,6 @@ $vinilo = producto_x_id($id);
               <?= $vinilo['publicacion'] ?>
             </li>
           </ul>
-          <div class="fs-3 mb-3 fw-bold text-center precio">$
-            <?= number_format($vinilo['precio'], 2, ",", ".") ?>
-          </div>
           <a href="#" class="mb-3 btn bg-btn w-100 fw-bold">COMPRAR</a>
         </div>
     </div>
