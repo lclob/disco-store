@@ -1,6 +1,6 @@
 <?PHP
-require_once "libraries/productos.php";
-$artista = artista();
+$miObjetoDisco = new Disco;
+$artista = $miObjetoDisco->artista();
 ?>
 
 <div id="artistas">

@@ -14,6 +14,7 @@ class Disco
   private $bajada;
   private $portada;
   private $precio;
+  private $banner;
 
   /**
    * Devuelve el catálgo completo
@@ -40,6 +41,7 @@ class Disco
       $disco->bajada = $value->bajada;
       $disco->portada = $value->portada;
       $disco->precio = $value->precio;
+      $disco->banner = $value->banner;
 
       $catalogo[] = $disco;
     }
@@ -52,7 +54,7 @@ class Disco
    * @param string $artista Un string con el nombre del artista a buscar
    * @return Disco[] Un Array lleno de instancias de objeto Comic.
    */
-  public function catalogo_x_personaje(string $artista): array
+  public function catalogo_x_artista(string $artista): array
   {
 
     $resultado = [];
@@ -80,6 +82,25 @@ class Disco
       }
     }
     return null;
+  }
+
+  /**
+   * Devuelve los datos del producto banner, el cual se utiliza para mostrar a cada artista en la seccion artistas
+   * 
+   * @return array Un array asociativo que contiene los arrays con datos de cada artista
+   */
+  public function artista(): array
+  {
+    $catalogo = $this->catalogo_completo();
+    $arrayArtistas = [];
+
+    foreach ($catalogo as $artista) {
+      if ($artista->banner) {
+        array_push($arrayArtistas, $artista);
+      }
+    }
+
+    return $arrayArtistas;
   }
 
   /**

@@ -1,9 +1,8 @@
 <?PHP
-require_once "libraries/productos.php";
 $id = $_GET['id'] ?? FALSE;
+
 $miObjetoDisco = new Disco();
 $vinilo = $miObjetoDisco->producto_x_id($id);
-
 ?>
 
 <div id="producto" class="mb-5">
@@ -14,7 +13,7 @@ $vinilo = $miObjetoDisco->producto_x_id($id);
     </div>
     <div class="container">
       <div class="row align-items-center justify-content-center">
-        <?PHP if (!empty($vinilo)) { ?>
+        <?PHP if (!empty($disco)) { ?>
           <div class="col">
             <figure>
               <img src="assets/img/<?= $disco->getPortada() ?>" alt="imagen producto">
@@ -22,29 +21,29 @@ $vinilo = $miObjetoDisco->producto_x_id($id);
           </div>
           <div class="col descripcion-producto">
             <p class="fs-6 fw-bold artista">
-              <?= $vinilo->getArtista() ?>
+              <?= $disco->getArtista() ?>
             </p>
             <h2>
-              <?= $vinilo->getTitulo() ?>
+              <?= $disco->getTitulo() ?>
             </h2>
             <div class="fs-3 mb-3 fw-bold text-start precio">$
-              <span><?= $vinilo->getPrecio() ?></span>
+              <span><?= $disco->getPrecio() ?></span>
             </div>
             <p>
-              <?= $vinilo->getBajada() ?>
+              <?= $disco->getBajada() ?>
             </p>
             <ul class="list-group list-group-flush bg-dark">
               <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Genero:</span>
-                <?= $vinilo->getGenero() ?>
+                <?= $disco->getGenero() ?>
               </li>
               <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Producción:</span>
-                <?= $vinilo->getProductor() ?>
+                <?= $disco->getProductor() ?>
               </li>
               <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
-                <?= $vinilo->getCanciones() ?>
+                <?= $disco->getCanciones() ?>
               </li>
               <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Publicación:</span>
-                <?= $vinilo->getPublicacion() ?>
+                <?= $disco->getPublicacion() ?>
               </li>
             </ul>
             <a href="#" class="mb-3 btn bg-btn w-100 fw-bold">COMPRAR</a>

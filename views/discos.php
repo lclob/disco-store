@@ -1,13 +1,10 @@
 <?PHP
-require_once "libraries/productos.php";
-require_once "libraries/funciones.php";
-
 $artistaSeleccionado = $_GET['nombre'] ?? FALSE;
 
 $tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
 
 $miObjetoDisco = new Disco();
-$catalogo = $miObjetoDisco->catalogo_x_personaje($artistaSeleccionado);
+$catalogo = $miObjetoDisco->catalogo_x_artista($artistaSeleccionado);
 
 if (empty($catalogo)) {
   $catalogo = $miObjetoDisco->catalogo_completo();
