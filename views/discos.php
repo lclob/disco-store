@@ -21,9 +21,12 @@ if (empty($catalogo)) {
 
     <div class="container">
       <div class="row g-4">
+
+        <?PHP if ($tituloArtista) { ?>
         <h3>
           <?= $tituloArtista ?>
         </h3>
+        <?PHP } ?>
 
         <?PHP foreach ($catalogo as $album) { ?>
           <div class="prod col-sm-6 col-md-4 col-xl-3">
@@ -46,11 +49,11 @@ if (empty($catalogo)) {
             </div>
           </div>
 
-          <div class="modal fade" id="producto-<?= $album['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="producto-<?= $album['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel-<?= $album['id'] ?>" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content bg-dark">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                  <h1 class="modal-title fs-5 text-light" id="exampleModalLabel-<?= $album['id'] ?>">
                     <?= $album['titulo'] ?>
                   </h1>
                   <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -66,8 +69,7 @@ if (empty($catalogo)) {
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Producción:</span>
                       <?= $album['productor'] ?>
                     </li>
-                    </li>
-                    <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
+                      <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
                       <?= $album['canciones'] ?>
                     </li>
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Publicación:</span>

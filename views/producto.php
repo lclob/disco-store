@@ -39,7 +39,6 @@ $vinilo = producto_x_id($id);
               <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Producción:</span>
                 <?= $vinilo['productor'] ?>
               </li>
-              </li>
               <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
                 <?= $vinilo['canciones'] ?>
               </li>

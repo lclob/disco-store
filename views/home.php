@@ -5,5 +5,5 @@
           <p>bienvenidos al salón de la música donde podrás viajar con tus artistas preferidos!</p>
         </div>
   </div>
-  <div class="home-vertical"><a href="index.php?sec=artistas">disco store</a></div>   
+  <div class="home-vertical"><a href="index.php?sec=discos">disco store</a></div>   
 </div>
