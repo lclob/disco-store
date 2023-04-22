@@ -10,7 +10,7 @@ $miObjetoDisco = new Disco();
 $catalogo = $miObjetoDisco->catalogo_x_personaje($artistaSeleccionado);
 
 if (empty($catalogo)) {
-  $catalogo = catalogo_completo();
+  $catalogo = $miObjetoDisco->catalogo_completo();
 }
 ?>
 
@@ -33,8 +33,8 @@ if (empty($catalogo)) {
         <?PHP foreach ($catalogo as $disco) { ?>
           <div class="prod col-sm-6 col-md-4 col-xl-3">
             <div class="card h-100 mb-3">
-              <div class="img shadow-lg card-img-top" style="background: url('assets/img/<?= $disco->portada ?>') no-repeat center">
-                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#producto-<?= $disco->id ?>">
+              <div class="img shadow-lg card-img-top" style="background: url('assets/img/<?= $disco->getPortada() ?>') no-repeat center">
+                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#producto-<?= $disco->getId() ?>">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                   </svg>
@@ -42,46 +42,46 @@ if (empty($catalogo)) {
               </div>
               <div class="card-body">
                 <p class="fs-6 m-0 fw-bold artista">
-                  <?= $disco->artista ?>
+                  <?= $disco->getArtista() ?>
                 </p>
                 <h5 class="card-title">
-                  <?= $disco->titulo ?>
+                  <?= $disco->getTitulo() ?>
                 </h5>
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="producto-<?= $disco->id ?>" tabindex="-1" aria-labelledby="exampleModalLabel-<?= $disco->id ?>" aria-hidden="true">
+          <div class="modal fade" id="producto-<?= $disco->getId() ?>" tabindex="-1" aria-labelledby="exampleModalLabel-<?= $disco->getId() ?>" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content bg-dark">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5 text-light" id="exampleModalLabel-<?= $disco->id ?>">
-                    <?= $disco->titulo ?>
+                  <h1 class="modal-title fs-5 text-light" id="exampleModalLabel-<?= $disco->getId() ?>">
+                    <?= $disco->getTitulo() ?>
                   </h1>
                   <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark">
                   <p class="card-text">
-                    <?= $disco->bajada ?>
+                    <?= $disco->getBajada() ?>
                   </p>
                   <ul class="list-group list-group-flush bg-dark">
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Genero:</span>
-                      <?= $disco->genero ?>
+                      <?= $disco->getGenero() ?>
                     </li>
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Producción:</span>
-                      <?= $disco->productor ?>
+                      <?= $disco->getProductor() ?>
                     </li>
                       <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
-                      <?= $disco->canciones ?>
+                      <?= $disco->getCanciones() ?>
                     </li>
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Publicación:</span>
-                      <?= $disco->publicacion ?>
+                      <?= $disco->getPublicacion() ?>
                     </li>
                   </ul>
                   <div class="fs-3 mb-3 fw-bold text-center precio">$
-                    <?= $disco->precio ?>
+                    <?= $disco->getPrecio() ?>
                   </div>
-                  <a href="index.php?sec=producto&id=<?= $disco->id ?>" class="btn bg-btn w-100 fw-bold">VER MÁS</a>
+                  <a href="index.php?sec=producto&id=<?= $disco->getId() ?>" class="btn bg-btn w-100 fw-bold">VER MÁS</a>
                 </div>
               </div>
             </div>

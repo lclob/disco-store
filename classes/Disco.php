@@ -20,28 +20,28 @@ class Disco
    */
   public function catalogo_completo(): array
   {
-    //echo "Soy un metodo y me estoy ejecutando, desde adentro de la clase Comic! =D";
+    //echo "Soy un metodo y me estoy ejecutando, desde adentro de la clase Disco! =D";
     $catalogo = [];
 
-    $JSON = file_get_contents('datos/productos.json');
+    $JSON = file_get_contents('data/productos.json');
     $JSONData = json_decode($JSON);
 
     foreach ($JSONData as $value) {
-      $comic = new self();
+      $disco = new self();
 
-      $comic->id = $value->id;
-      $comic->nombre = $value->nombre;
-      $comic->genero = $value->genero;
-      $comic->artista = $value->artista;
-      $comic->productor = $value->productor;
-      $comic->titulo = $value->titulo;
-      $comic->publicacion = $value->publicacion;
-      $comic->canciones = $value->canciones;
-      $comic->bajada = $value->bajada;
-      $comic->portada = $value->portada;
-      $comic->precio = $value->precio;
+      $disco->id = $value->id;
+      $disco->nombre = $value->nombre;
+      $disco->genero = $value->genero;
+      $disco->artista = $value->artista;
+      $disco->productor = $value->productor;
+      $disco->titulo = $value->titulo;
+      $disco->publicacion = $value->publicacion;
+      $disco->canciones = $value->canciones;
+      $disco->bajada = $value->bajada;
+      $disco->portada = $value->portada;
+      $disco->precio = $value->precio;
 
-      $catalogo[] = $comic;
+      $catalogo[] = $disco;
     }
 
     return $catalogo;
