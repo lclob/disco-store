@@ -15,11 +15,11 @@ $artista = $miObjetoDisco->artista();
         <?PHP foreach ($artista as $key) { ?>
             <div class="col-sm-6 col-md-4 col-xl-3">
               <div class="card text-bg-dark">
-                <a href="index.php?sec=discos&nombre=<?= $key['nombre'] ?>">
-                <img src="assets/img/<?= $key['portada'] ?>" class="card-img" alt="portada - <?= $key['titulo'] ?>"/>
+                <a href="index.php?sec=discos&nombre=<?= $key->getNombre() ?>">
+                <img src="assets/img/<?= $key->getPortada() ?>" class="card-img" alt="portada - <?= $key->getTitulo() ?>"/>
                 <div class="card-img-overlay">
                   <h5 class="card-title">
-                    <?= $tituloArtistas = ucwords(str_replace("_", " ", $key['nombre'])); ?>
+                    <?= $tituloArtistas = ucwords(str_replace("_", " ", $key->getNombre())); ?>
                   </h5>
                 </div>
               </a>

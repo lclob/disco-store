@@ -59,7 +59,7 @@ if (empty($catalogo)) {
                 </div>
                 <div class="modal-body bg-dark">
                   <p class="card-text">
-                    <?= $disco->getBajada() ?>
+                    <?= $disco->bajada_reducida(25) ?>
                   </p>
                   <ul class="list-group list-group-flush bg-dark">
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Genero:</span>

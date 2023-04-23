@@ -2,7 +2,7 @@
 $id = $_GET['id'] ?? FALSE;
 
 $miObjetoDisco = new Disco();
-$vinilo = $miObjetoDisco->producto_x_id($id);
+$disco = $miObjetoDisco->producto_x_id($id);
 ?>
 
 <div id="producto" class="mb-5">

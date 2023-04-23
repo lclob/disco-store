@@ -85,30 +85,30 @@ class Disco
   }
 
   /**
+   * Devuelve el valor de banner
+   */
+  public function getbanner(): bool
+  {
+    return $this->banner;
+  }
+
+  /**
    * Devuelve los datos del producto banner, el cual se utiliza para mostrar a cada artista en la seccion artistas
    * 
-   * @return array Un array asociativo que contiene los arrays con datos de cada artista
+   * @return Disco[] Un array de objetos con datos de cada producto banner
    */
   public function artista(): array
   {
-    $catalogo = $this->catalogo_completo();
     $arrayArtistas = [];
+    $catalogo = $this->catalogo_completo();
 
     foreach ($catalogo as $artista) {
       if ($artista->banner) {
-        array_push($arrayArtistas, $artista);
+        $arrayArtistas[] = $artista;
       }
     }
 
     return $arrayArtistas;
-  }
-
-  /**
-   * Devuelve el nombre completo de la edición
-   */
-  public function nombre_completo(): string
-  {
-    return $this->nombre;
   }
 
   /**
@@ -216,7 +216,8 @@ class Disco
    */
   public function getPrecio()
   {
-    return $this->precio;
+    $precioFormat = number_format($this->precio, 2, ",", ".");
+    return $precioFormat;
   }
 
 

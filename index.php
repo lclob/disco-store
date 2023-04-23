@@ -1,5 +1,5 @@
 <?PHP
-require_once "classes/Disco.php`";
+require_once "classes/Disco.php";
 
 $secciones_validas = [
   "home" => [
