@@ -1,14 +1,18 @@
 <?PHP
 $artistaSeleccionado = $_GET['nombre'] ?? FALSE;
 
-$tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
-
 $miObjetoDisco = new Disco();
 $catalogo = $miObjetoDisco->catalogo_x_artista($artistaSeleccionado);
+
+echo "<pre>";
+print_r($catalogo);
+echo "</pre>";
 
 if (empty($catalogo)) {
   $catalogo = $miObjetoDisco->catalogo_completo();
 }
+
+$tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
 ?>
 
 <div id="discos">
