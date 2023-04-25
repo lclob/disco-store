@@ -18,7 +18,7 @@ $secciones_validas = [
     "titulo" => "Nuestros artistas"
   ],
   "producto" => [
-      "titulo" => "Detalle de producto"
+    "titulo" => "Detalle de producto"
   ]
 ];
 
@@ -71,16 +71,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
           <a class="nav-link active" href="index.php?sec=artistas">Artistas</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="index.php?sec=discos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Discos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php?sec=discos">Todos</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=bob_marley">Bob Marley</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=pink_floyd">Pink Floyd</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=the_beatles">The Beatles</a></li>
-            <li><a class="dropdown-item" href="index.php?sec=discos&nombre=rolling_stones">Rolling Stones</a></li>
-          </ul>
+          <a class="nav-link active" href="index.php?sec=discos">Discos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="index.php?sec=historia">Historia</a>

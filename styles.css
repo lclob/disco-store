@@ -276,6 +276,15 @@ main{
   transform: scale(1.01);
 }
 
+#discos .filters{
+  gap: 1rem;
+}
+
+#discos .filtrar{
+  font-size: 22px;
+  color: turquoise;
+}
+
 /* 404 */
 #not-found {
   color: white;

@@ -1,15 +1,21 @@
 <?PHP
 $artistaSeleccionado = $_GET['nombre'] ?? FALSE;
+$cantidadCanciones = $_GET['canciones'] ?? FALSE;
+$filtroGenero = $_GET['genero'] ?? FALSE;
 
 $miObjetoDisco = new Disco();
 $catalogo = $miObjetoDisco->catalogo_x_artista($artistaSeleccionado);
 
-echo "<pre>";
-print_r($catalogo);
-echo "</pre>";
-
 if (empty($catalogo)) {
   $catalogo = $miObjetoDisco->catalogo_completo();
+}
+
+if ($cantidadCanciones) {
+  $catalogo = $miObjetoDisco->catalogo_x_canciones($cantidadCanciones);
+}
+
+if ($filtroGenero) {
+  $catalogo = $miObjetoDisco->catalogo_x_genero($filtroGenero);
 }
 
 $tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
@@ -20,15 +26,51 @@ $tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
     <div class="container">
       <h1 class="text-center mb-5 fw-bold text-white">disco-store</h1>
       <h2 class="text-white mb-3">Nuestros vinilos</h2>
+
+      <div class="mb-4">
+        <span class="mb-2 filtrar">Filtrar por:</span>
+        <ul class="list-group d-flex flex-row filters bg-black">
+          <li class="dropdown-item w-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Artistas
+            </button>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&nombre=bob_marley">Bob Marley</a></li>
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&nombre=pink_floyd">Pink Floyd</a></li>
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&nombre=the_beatles">The Beatles</a></li>
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&nombre=rolling_stones">Rolling Stones</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item w-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Genero
+            </button>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&genero=Reggae">Reggae</a></li>
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&genero=Rock">Rock</a></li>
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&genero=Rock/Pop">Rock/Pop</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item w-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Canciones
+            </button>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&canciones=10">Menos de 10</a></li>
+              <li><a class="dropdown-item text-white" href="index.php?sec=discos&canciones=11">Más de 10</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="container">
       <div class="row g-4">
 
         <?PHP if ($tituloArtista) { ?>
-        <h3>
-          <?= $tituloArtista ?>
-        </h3>
+          <h3>
+            <?= $tituloArtista ?>
+          </h3>
         <?PHP } ?>
 
         <?PHP foreach ($catalogo as $disco) { ?>
@@ -72,7 +114,7 @@ $tituloArtista = ucwords(str_replace("_", " ", $artistaSeleccionado));
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Producción:</span>
                       <?= $disco->getProductor() ?>
                     </li>
-                      <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
+                    <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Canciones:</span>
                       <?= $disco->getCanciones() ?>
                     </li>
                     <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Publicación:</span>

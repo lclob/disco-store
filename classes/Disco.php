@@ -52,7 +52,7 @@ class Disco
   /**
    * Devuelve el catalogo de productos de un artista en particular
    * @param string $artista Un string con el nombre del artista a buscar
-   * @return Disco[] Un Array lleno de instancias de objeto Comic.
+   * @return Disco[] Un Array lleno de instancias de objeto Disco.
    */
   public function catalogo_x_artista(string $artista): array
   {
@@ -61,7 +61,7 @@ class Disco
     $catalogo = $this->catalogo_completo();
 
     foreach ($catalogo as $p) {
-      if ($p->artista == $artista) {
+      if ($p->nombre == $artista) {
         $resultado[] = $p;
       }
     }
@@ -110,6 +110,47 @@ class Disco
 
     return $arrayArtistas;
   }
+
+   /**
+   * Devuelve el catalogo de productos dependiendo la cantidad de canciones.
+   * @param int $canciones Esta es la cantidad de canciones.
+   * @return Disco[] Un Array lleno de instancias de objeto Disco.
+   */
+  public function catalogo_x_canciones(int $canciones): array
+  {
+
+    $resultado = [];
+    $catalogo = $this->catalogo_completo();
+
+    foreach ($catalogo as $p) {
+      if ($p->canciones < $canciones) {
+        $resultado[] = $p;
+      } else if($p->canciones > $canciones){
+        $resultado[] = $p;
+      }
+    }
+    return $resultado;
+  }
+
+  /**
+   * Devuelve el catalogo de productos dependiendo de el genero.
+   * @param string $genero Este es el genero.
+   * @return Disco[] Un Array lleno de instancias de objeto Disco.
+   */
+  public function catalogo_x_genero(string $genero): array
+  {
+
+    $resultado = [];
+    $catalogo = $this->catalogo_completo();
+
+    foreach ($catalogo as $p) {
+      if ($p->genero == $genero) {
+        $resultado[] = $p;
+      }
+    }
+    return $resultado;
+  }
+
 
   /**
    * Devuelve el precio de la unidad, formateado correctamente
