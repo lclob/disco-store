@@ -9,7 +9,7 @@ $secciones_validas = [
     "titulo" => "¿Quienes Somos?"
   ],
   "contacto" => [
-    "titulo" => "Contacto"
+    "titulo" => "Newsletter"
   ],
   "discos" => [
     "titulo" => "Nuestros discos"
@@ -47,7 +47,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <?= $titulo ?>
   </title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link href="styles.css" rel="stylesheet">
 </head>
 
@@ -63,7 +63,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto pt-3">
         <li class="nav-item">
           <a class="nav-link active" href="index.php?sec=home">Home</a>
         </li>
@@ -93,7 +93,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <p class="text-light">disco-store</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.bundle.min.js" ></script>
 </body>
 
 </html>

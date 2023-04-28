@@ -80,7 +80,7 @@ main{
     padding: 0 !important;
   }
   
-  .nav-item::after{
+  .nav-item::after, #discos .btn-filters::after{
       content: '';
       display: block;
       width: 0;
@@ -89,7 +89,7 @@ main{
       transition: width .3s;
   }
   
-  .nav-item:hover::after {
+  .nav-item:hover::after, #discos .btn-filters:hover::after {
       width: 100%;
   }
   
@@ -124,6 +124,10 @@ main{
   }
   #home h1{
     font-size: 3rem;
+  }
+
+  #discos .filters-show{
+    justify-content: center;
   }
 }
 
@@ -286,13 +290,18 @@ main{
   transform: scale(1.01);
 }
 
-#discos .filters{
-  gap: 1rem;
-}
-
 #discos .filtrar{
   font-size: 22px;
   color: turquoise;
+}
+
+#discos .btn-filters {
+  background: transparent;
+  border-color: transparent;
+}
+
+#discos .filters  .dropdown-menu{
+  background-color: black !important;
 }
 
 #discos .dropdown-item:hover{
@@ -301,6 +310,24 @@ main{
 
 #discos .dropdown-toggle{
   box-shadow: none;
+}
+
+#discos .secondary-dropdown-item{
+  transition: all ease-in-out .2s;
+}
+
+#discos .secondary-dropdown-item:hover{
+  transform: scale(1.05);
+}
+
+.dropdown-toggle::after{
+  margin-left: 0;
+  vertical-align: 0;
+  content: "";
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
 }
 
 /* 404 */

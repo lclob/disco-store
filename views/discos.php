@@ -28,35 +28,38 @@ $filtroArtistas = $miObjetoDisco->artista();
       <h2 class="text-white mb-3">Nuestros vinilos</h2>
 
       <div class="mb-4">
-        <span class="mb-2 filtrar">Filtrar por:</span>
+        <span class="d-block filtrar mb-2">Filtrar por:</span>
         <ul class="list-group d-flex flex-row filters bg-black filters-show">
           <li class="dropdown-item w-auto">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-secondary btn-filters"><a class="dropdown-item text-white" href="index.php?sec=discos">Todos</a></button>
+          </li>
+          <li class="dropdown-item w-auto">
+            <button class="btn btn-secondary btn-filters dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Artistas
             </button>
             <ul class="dropdown-menu flex-column bg-secondary">
               <?PHP foreach ($filtroArtistas as $artista) { ?>
-              <li><a class="dropdown-item text-white" href="index.php?sec=discos&nombre=<?= $artista->getNombre() ?>"><?= $artista->getArtista() ?></a></li>
+              <li><a class="dropdown-item text-white secondary-dropdown-item" href="index.php?sec=discos&nombre=<?= $artista->getNombre() ?>"><?= $artista->getArtista() ?></a></li>
               <?PHP } ?>
             </ul>
           </li>
           <li class="dropdown-item w-auto">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary btn-filters dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Genero
             </button>
             <ul class="dropdown-menu flex-column bg-secondary">
             <?PHP foreach ($filtroGeneros as $genero) { ?>
-              <li><a class="dropdown-item text-white" href="index.php?sec=discos&genero=<?= $genero ?>"><?= $genero ?></a></li>
+              <li><a class="dropdown-item text-white secondary-dropdown-item" href="index.php?sec=discos&genero=<?= $genero ?>"><?= $genero ?></a></li>
               <?PHP } ?>
             </ul>
           </li>
           <li class="dropdown-item w-auto">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-filters btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Año
             </button>
             <ul class="dropdown-menu flex-column bg-secondary">
               <?PHP foreach ($catalogoCompleto as $fecha) { ?>
-                <li><a class="dropdown-item text-white" href="index.php?sec=discos&anio=<?= $fecha->getPublicacion() ?>"><?= $fecha->getPublicacion() ?></a></li>
+                <li><a class="dropdown-item text-white secondary-dropdown-item" href="index.php?sec=discos&anio=<?= $fecha->getPublicacion() ?>"><?= $fecha->getPublicacion() ?></a></li>
               <?PHP } ?>
             </ul>
           </li>
