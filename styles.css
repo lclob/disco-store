@@ -262,6 +262,16 @@ main{
   margin: 0 !important;
 }
 
+#discos .filters-show .show {
+  display: flex !important;
+  align-items: start;
+  justify-content: start;
+  margin: 0 !important;
+  max-height: 300px;
+  overflow: scroll;
+  top: -7px !important;
+}
+
 #discos .modal-title {
   font-weight: bold;
 }
@@ -283,6 +293,14 @@ main{
 #discos .filtrar{
   font-size: 22px;
   color: turquoise;
+}
+
+#discos .dropdown-item:hover{
+  background-color: transparent !important;
+}
+
+#discos .dropdown-toggle{
+  box-shadow: none;
 }
 
 /* 404 */

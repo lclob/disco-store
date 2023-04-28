@@ -113,22 +113,20 @@ class Disco
 
    /**
    * Devuelve el catalogo de productos dependiendo la cantidad de canciones.
-   * @param int $canciones Esta es la cantidad de canciones.
+   * @param int $anio Esta es la cantidad de canciones.
    * @return Disco[] Un Array lleno de instancias de objeto Disco.
    */
-  public function catalogo_x_canciones(int $canciones): array
+  public function catalogo_x_anio(int $anio): array
   {
 
     $resultado = [];
     $catalogo = $this->catalogo_completo();
 
     foreach ($catalogo as $p) {
-      if ($p->canciones < $canciones) {
+      if ($p->publicacion == $anio) {
         $resultado[] = $p;
-      } else if($p->canciones > $canciones){
-        $resultado[] = $p;
-      }
-    }
+      };
+    };
     return $resultado;
   }
 
@@ -151,6 +149,21 @@ class Disco
     return $resultado;
   }
 
+  /**
+   * Devuelve los generos de los discos.
+   * @return Disco[] Un Array lleno de instancias de objeto Disco.
+   */
+  public function genero(): array
+  {
+
+    $resultado = [];
+    $catalogo = $this->catalogo_completo();
+
+    foreach ($catalogo as $p) {
+      $resultado[] = $p->genero;
+    }
+    return $resultado;
+  }
 
   /**
    * Devuelve el precio de la unidad, formateado correctamente
