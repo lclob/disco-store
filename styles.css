@@ -302,6 +302,9 @@ main{
 
 #discos .filters  .dropdown-menu{
   background-color: black !important;
+  border-bottom: 1px solid turquoise;
+  border-left: 1px solid turquoise;
+  border-right: 1px solid turquoise;
 }
 
 #discos .dropdown-item:hover{
@@ -447,4 +450,31 @@ main{
 /* footer */
 footer {
   background: transparent;
+}
+
+/* form */
+#contacto>div:first-of-type {
+  padding: 2rem;
+}
+#contacto .form{
+  gap: 1rem;
+}
+#contacto .form-check{
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+}
+#contacto .form-check-input{
+  margin: 0;
+}
+#contacto .form-check-input:checked{
+  background-color: turquoise;
+  border-color: turquoise;
+}
+#contacto .form-check-input:focus{
+  border-color: turquoise;
+  outline: 0;
+  box-shadow: none;
 }

@@ -8,9 +8,6 @@ $secciones_validas = [
   "historia" => [
     "titulo" => "¿Quienes Somos?"
   ],
-  "contacto" => [
-    "titulo" => "Newsletter"
-  ],
   "discos" => [
     "titulo" => "Nuestros discos"
   ],
@@ -19,7 +16,13 @@ $secciones_validas = [
   ],
   "producto" => [
     "titulo" => "Detalle de producto"
-  ]
+  ],
+  "contacto" => [
+    "titulo" => "Newsletter"
+  ],
+  "procesar_datos_post" => [
+    "titulo" => "Datos usuario"
+  ],
 ];
 
 // null coalesce. Unicamente en PHP 7+
