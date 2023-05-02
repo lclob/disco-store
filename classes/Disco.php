@@ -44,6 +44,7 @@ class Disco
       $disco->banner = $value->banner;
 
       $catalogo[] = $disco;
+      shuffle($catalogo);
     }
 
     return $catalogo;

@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width:580px) {
-  #home > div:first-of-type, #discos > div:first-of-type, #artistas > div:first-of-type, #producto > div:first-of-type {
+  #home > div:first-of-type, #discos > div:first-of-type, #artistas > div:first-of-type, #producto > div:first-of-type, #datos > div:first-of-type, #historia > div:first-of-type, #contacto > div:first-of-type {
     padding: 2rem .5rem !important;
   }
 }
@@ -302,9 +302,8 @@ main{
 
 #discos .filters  .dropdown-menu{
   background-color: black !important;
-  border-bottom: 1px solid turquoise;
-  border-left: 1px solid turquoise;
-  border-right: 1px solid turquoise;
+  border: 1px solid turquoise;
+  margin-top: 10px !important;
 }
 
 #discos .dropdown-item:hover{
@@ -447,6 +446,24 @@ main{
   padding: 2rem;
 }
 
+#historia img{
+  width: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  max-height: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: 2rem auto;
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+}
+
+#historia .carousel-inner{
+  background-color: white;
+  border-radius: 10px;
+}
+
 /* footer */
 footer {
   background: transparent;
@@ -477,4 +494,13 @@ footer {
   border-color: turquoise;
   outline: 0;
   box-shadow: none;
+}
+
+/* datos post */
+#datos li{
+  color: white;
+  background: transparent !important;
+}
+#datos ul{
+  background: transparent !important;
 }

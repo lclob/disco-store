@@ -34,7 +34,7 @@ $generos = array_unique($miObjetoDisco->genero());
 
             <div class="col-12">
               <div class="form-floating mb-3 text-dark">
-                <input type="email" class="form-control text-dark" id="email" placeholder="Ingrese su e-mail">
+                <input type="email" class="form-control text-dark" name="email" id="email" placeholder="Ingrese su e-mail" required>
                 <label for="email" class="form-label">Ingrese su e-mail</label>
               </div>
             </div>
