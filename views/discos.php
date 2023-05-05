@@ -101,13 +101,13 @@ $filtroArtistas = $miObjetoDisco->artista();
             <div class="modal fade" id="producto-<?= $disco->getId() ?>" tabindex="-1" aria-labelledby="exampleModalLabel-<?= $disco->getId() ?>" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content bg-dark">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel-<?= $disco->getId() ?>">
-                      <?= $disco->getTitulo() ?>
-                    </h1>
+                  <div class="modal-header" style="background-image:url('assets/img/<?= $disco->getPortada() ?>')">
                     <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body bg-dark">
+                    <h1 class="modal-title fs-5 text-light mb-2" id="exampleModalLabel-<?= $disco->getId() ?>">
+                      <?= $disco->getTitulo() ?>
+                    </h1>
                     <p class="card-text">
                       <?= $disco->bajada_reducida(25) ?>
                     </p>

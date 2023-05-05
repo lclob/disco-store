@@ -45,7 +45,7 @@ $disco = $miObjetoDisco->producto_x_id($id);
               <?= $disco->getPublicacion() ?>
             </li>
           </ul>
-          <a href="#" class="mb-3 btn bg-btn w-100 fw-bold">COMPRAR</a>
+          <a href="#" class="btn bg-btn w-100 fw-bold">COMPRAR</a>
         </div>
       </div>
     </div>

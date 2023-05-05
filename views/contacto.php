@@ -8,12 +8,12 @@ $generos = array_unique($miObjetoDisco->genero());
     <div class="container text-center">
       <h1 class="text-center mb-5 fw-bold">disco-store</h1>
       <h2 class="mb-2">Newsletter</h2>
-      <p  class="mb-5">Suscribite a nuestro newsletter y no te pierdas las últimas novedades!</p>
+      <p class="mb-3">Suscribite a nuestro newsletter y no te pierdas las últimas novedades!</p>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-lg-10 m-auto borde">
           <form action="index.php?sec=procesar_datos_post" method="POST" class="row gap-3 justify-content-center">
 
             <div class="row p-0">
@@ -41,7 +41,7 @@ $generos = array_unique($miObjetoDisco->genero());
 
             <div class="col-12">
               <div class="mb-3 ">
-                <div class="mb-2 fw-bold">Seleccione la/s pelicula/s que haya visto:</div>
+                <div class="mb-2 fw-bold">Seleccione su/s genero/s preferidos:</div>
                 <div class="d-flex flex-wrap justify-content-start text-dark form">
                   <?PHP foreach ($generos as $indice => $genero) { ?>
 
@@ -55,7 +55,7 @@ $generos = array_unique($miObjetoDisco->genero());
               </div>
             </div>
 
-            <button type="submit" class="col-md-4 btn bg-btn mt-5">Enviar</button>
+            <button type="submit" class="col-md-4 btn bg-btn">Enviar</button>
 
           </form>
         </div>
