@@ -41,7 +41,7 @@ class Disco
       $disco->bajada = $value->bajada;
       $disco->portada = $value->portada;
       $disco->precio = $value->precio;
-      $disco->banner = $value->banner;
+      $disco->banner = $value->banner ?? false;
 
       $catalogo[] = $disco;
       shuffle($catalogo);
