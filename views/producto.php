@@ -50,8 +50,4 @@ $disco = $miObjetoDisco->producto_x_id($id);
       </div>
     </div>
   </div>
-
-<!-- not working -->
-<?PHP } else { 
-  require_once "views/404.php";
-} ?>
+<?PHP } ?>
