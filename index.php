@@ -20,6 +20,9 @@ $secciones_validas = [
   "contacto" => [
     "titulo" => "Newsletter"
   ],
+  "alumno" => [
+    "titulo" => "Datos alumno"
+  ],
   "procesar_datos_post" => [
     "titulo" => "Datos usuario"
   ],
@@ -81,6 +84,9 @@ if (!array_key_exists($seccion, $secciones_validas)) {
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="index.php?sec=contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.php?sec=alumno">Datos del alumno</a>
         </li>
       </ul>
     </div>

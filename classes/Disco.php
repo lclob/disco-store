@@ -94,7 +94,7 @@ class Disco
   }
 
   /**
-   * Devuelve los datos del producto banner, el cual se utiliza para mostrar a cada artista en la seccion artistas
+   * Devuelve los datos del producto banner si es que existe, el cual se utiliza para mostrar a cada artista en la seccion artistas
    * 
    * @return Disco[] Un array de objetos con datos de cada producto banner
    */

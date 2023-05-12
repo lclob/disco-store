@@ -54,7 +54,7 @@ $filtroArtistas = $miObjetoDisco->artista();
                 <?PHP } ?>
               </ul>
             </li>
-            <li class="dropdown-item w-auto">
+            <li class="dropdown-item w-auto anio">
               <button class="btn btn-filters btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Año
               </button>
