@@ -1,5 +1,7 @@
 <?PHP
 require_once "classes/Disco.php";
+require_once "classes/Disco2.php";
+require_once "classes/Conexion.php";
 
 $secciones_validas = [
   "home" => [
@@ -26,10 +28,12 @@ $secciones_validas = [
   "procesar_datos_post" => [
     "titulo" => "Datos usuario"
   ],
+  "test" => [
+    "titulo" => "Test"
+  ]
 ];
 
 // null coalesce. Unicamente en PHP 7+
-// $seccion = isset($_GET['sec']) ? $_GET['sec'] : "home";
 $seccion = $_GET['sec'] ?? "home";
 
 if (!array_key_exists($seccion, $secciones_validas)) {
