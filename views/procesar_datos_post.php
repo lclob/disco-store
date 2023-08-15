@@ -18,7 +18,7 @@ if (!$generos) {
 <div id="datos" class="mb-5">
   <div>
     <div class="container">
-      <h1 class="text-center mb-5 fw-bold text-white">disco-store</h1>
+      <h1 class="text-center mb-5 fw-bold">disco-store</h1>
     </div>
     <div class="container">
       <div class="row">

@@ -9,31 +9,28 @@ $disco = $miObjetoDisco->producto_x_id($id);
 
   <div id="producto" class="mb-5">
     <div class="container">
-      <h1 class="text-center mb-5 fw-bold text-white">disco-store</h1>
+      <h1 class="text-center mb-5 fw-bold">disco-store</h1>
     </div>
     <div class="container">
-      <div class="row align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-center info">
         <div class="col">
           <figure>
-            <img src="assets/img/<?= $disco->getPortada() ?>" alt="imagen producto">
+            <img src="imagenes_discos/<?= $disco->getPortada() ?>" alt="imagen producto">
           </figure>
         </div>
         <div class="col descripcion-producto">
-          <p class="fs-6 fw-bold artista">
-            <?= $disco->getArtista() ?>
-          </p>
           <h2>
             <?= $disco->getTitulo() ?>
           </h2>
           <div class="fs-3 mb-3 fw-bold text-start precio">$
-            <span><?= $disco->getPrecio() ?></span>
+            <span><?= number_format($disco->getPrecio(), 2, ",", ".") ?></span>
           </div>
           <p>
             <?= $disco->getBajada() ?>
           </p>
           <ul class="list-group list-group-flush bg-dark">
             <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Genero:</span>
-              <?= $disco->getGenero() ?>
+              <?= $disco->getGenero()->getNombre() ?>
             </li>
             <li class="list-group-item px-0 bg-dark"><span class="fw-bold">Producción:</span>
               <?= $disco->getProductor() ?>
@@ -45,7 +42,17 @@ $disco = $miObjetoDisco->producto_x_id($id);
               <?= $disco->getPublicacion() ?>
             </li>
           </ul>
-          <a href="#" class="btn bg-btn w-100 fw-bold">COMPRAR</a>
+          <form action="admin/actions/add_item_acc.php" method="GET" class="row">
+            <div class="col-6 d-flex align-items-center">
+              <label for="q" class="fw-bold me-2">Cantidad: </label>
+              <input type="number" class="form-control qty" value="1" name="q" id="q">
+            </div>
+            <div class="col-6">
+              <input type="submit" value="AGREGAR AL CARRITO" class="btn  bg-btn w-100">
+              <input type="hidden" value="<?= $id ?>" name="id" id="id">
+
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -5,20 +5,20 @@ $discos = $miObjetoDisco->catalogo_completo();
 
 <div id="historia" class="d-flex justify-content-center">
   <div>
-    <div class="container">
+    <div class="containe-fluidr">
       <h1 class="text-center mb-5 fw-bold">disco-store</h1>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 mb-3">
+        <div class="col-12 mb-3 p-0">
           <div id="carouselExampleControls" class="carousel carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="index.php?sec=producto&id=<?= $discos[1]->getId() ?>"><img src="assets/img/<?= $discos[1]->getPortada() ?>" class="d-block" alt="<?= $discos[1]->getTitulo() ?> - imagen" /></a>
+                <a href="index.php?sec=producto&id=<?= $discos[1]->getId() ?>"><img src="imagenes_discos/<?= $discos[1]->getPortada() ?>" class="d-block" alt="<?= $discos[1]->getTitulo() ?> - imagen" /></a>
             </div>
               <?PHP foreach ($discos as $disco) { ?>
                 <div class="carousel-item">
-                <a href="index.php?sec=producto&id=<?= $disco->getId() ?>"><img src="assets/img/<?= $disco->getPortada() ?>" class="d-block" alt="<?= $disco->getTitulo() ?> - imagen" /></a>
+                <a href="index.php?sec=producto&id=<?= $disco->getId() ?>"><img src="imagenes_discos/<?= $disco->getPortada() ?>" class="d-block" alt="<?= $disco->getTitulo() ?> - imagen" /></a>
                 </div>
               <?PHP } ?>
             </div>

@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'lemon';
+    src: url(assets/fonts/LEMONMILK-Bold.otf);
+}
+
+ul{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.princial{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.principal a{
+    text-decoration: none;
+}
+
+.container-main{
+    font-size: 1em;
+    line-height: 1.30;
+    min-height: calc(100vh - 250px);
+    display: grid;
+    align-items: center;
+}
+
+.main{
+    background-color: #fcf9ee;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 16px -6px rgb(0 0 0 / 75%);
+    margin: 0 auto;
+    border: 3px solid black;
+
+}
+
+.principal{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.principal > div ul li:first-of-type{
+    margin-bottom: 25px;
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.principal h2{
+    font-size: 5rem;
+    color: black;
+    max-width: 450px;
+    line-height: 90%;
+}
+
+.principal p{
+    padding-right: 20px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.principal figure{
+    margin: 20px;
+    text-align: center;
+}
+
+.principal img{
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    max-width: 100%;
+    min-height: 400px;
+    box-shadow: 3px 3px 16px -6px rgb(0 0 0 / 75%);
+}
+
+.principal > div ul li:last-of-type a{
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 16px -6px rgb(0 0 0 / 75%);
+    padding: 10px;
+    color: #fcf9ee;
+    background-color: black;
+    transition: all .4s ease-in-out;
+}
+
+.principal > div ul li:first-of-type a{
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 16px -6px rgb(0 0 0 / 75%);
+    padding: 10px;
+    color: black;
+    background-color: #fcf9ee;
+    transition: all .4s ease-in-out;
+}
+
+#fb{
+    padding: 0 10px;
+    color: black;
+}
+
+#email{
+    padding: 0 10px;
+    color: black;
+}
+
+#insta{
+    padding: 0 10px;
+    color: black;
+}
+
+#lk{
+    padding: 0 10px;
+    color: black;
+}
+
+.main{
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (min-width: 350px) {
+
+    .principal > div ul{
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .principal > div ul li:first-of-type{
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 680px) {
+    .main{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+    }
+
+    .principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .principal > div{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .principal > div ul{
+        align-self: end;
+    }
+
+    .principal figure{
+        margin: 0;
+    }
+
+    .main div:last-child ul{
+        margin: 0;
+    }
+
+    .principal p{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 930px) {
+
+    .main{
+        transition: all .5s ease-out;
+
+    }
+
+    .principal p{
+        padding-right: 30px;
+    }
+
+    .principal{
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    .principal > div{
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+
+    .main:hover{
+        background-color: #e7d6c4 ;
+        background-size: contain;
+    }
+    
+    .main:hover h2{
+        color: #e5f167;
+    }
+    
+    .principal h2, .principal p, .principal li, #insta, #fb, #lk, #email{
+        transition: color .2s ease-out;
+    }
+    
+    .principal figure:hover img{
+        transform: scale(1) rotate(20deg);
+    }
+    
+    .principal > div ul li:last-of-type a:hover{
+        box-shadow: none;
+        color: black;
+        background-color: #ddc92a;
+    }
+    
+    .principal > div ul li:first-of-type a:hover{
+        box-shadow: none;
+    }
+}

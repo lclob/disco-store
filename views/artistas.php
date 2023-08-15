@@ -1,26 +1,26 @@
 <?PHP
-$miObjetoDisco = new Disco;
-$artista = $miObjetoDisco->artista();
+$miObjetoArtista = new Artista;
+$artista = $miObjetoArtista->get_artistas();
 ?>
 
 <div id="artistas">
   <div>
-    <div class="container">
-      <h1 class="text-center mb-5 fw-bold text-white">disco-store</h1>
-      <h2 class="text-white mb-3">Nuestros artistas</h2>
+    <div class="container-fluid">
+      <h1 class="text-center mb-5 fw-bold">disco-store</h1>
+      <h2 class="mb-3">Nuestros artistas</h2>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row g-4">
         <?PHP foreach ($artista as $key) { ?>
             <div class="col-sm-6 col-md-4 col-xl-3">
               <div class="card text-bg-dark">
-                <a href="index.php?sec=discos&nombre=<?= $key->getNombre() ?>">
-                <img src="assets/img/<?= $key->getPortada() ?>" class="card-img" alt="portada - <?= $key->getTitulo() ?>"/>
+                <a href="index.php?sec=discos&nombre=<?= $key->getId() ?>">
+                <img src="imagenes_artistas/<?= $key->getPortada() ?>" class="card-img" alt="portada - <?= $key->getNombre() ?>"/>
                 <div class="card-img-overlay">
-                  <h5 class="card-title">
+                  <h3 class="card-title h5">
                     <?= $tituloArtistas = ucwords(str_replace("_", " ", $key->getNombre())); ?>
-                  </h5>
+                  </h3>
                 </div>
               </a>
               </div>

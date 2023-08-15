@@ -20,7 +20,6 @@ class Conexion
 
         try {
             self::$db = new PDO(self::DB_DSN, self::DB_USER, self::DB_PASS);
-            echo "<p>Acabo de crear una conexion para poder traer datos! =D</p>";
         } catch (Exception $e) {
             die('Error al conectar con MySQL.');
         }
